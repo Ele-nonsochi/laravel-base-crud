@@ -49,7 +49,7 @@ class ComicController extends Controller
         $newUser = new Comic();
         $newUser->fill($data);
         $newUser->save();
-        return redirect()->route("comics.detailComic", $newUser->id);
+        return redirect()->route("comics.index", $newUser->id);
     }
 
     /**
@@ -58,9 +58,9 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Comic $comic)
     {
-        return view("comics.detailComic", compact("comics"));
+        return view("comics.detailComic", compact('comic'));
     }
 
     /**
