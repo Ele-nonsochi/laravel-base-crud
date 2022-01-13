@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container">
+<div class="container sfondo">
      <h1>Comic List</h1>
      <a class="btn btn-link" href="{{ route('comics.create') }} ">Add Comic</a>  
 

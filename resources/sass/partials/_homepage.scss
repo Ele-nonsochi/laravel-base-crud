@@ -1,0 +1,18 @@
+.homebackground{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    position: relative;
+}
+.gobutton{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    text-decoration: none;
+    color: black;
+    font-size: 60px;
+    /* &:hover{
+       
+    } */
+}
+
