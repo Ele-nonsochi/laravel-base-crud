@@ -11,11 +11,11 @@
         {{-- <li><a href="{{ route('comics.show', $comic->id ) }}">{{ $comic["title"] }}</a></li> --}}
         <div class="col">
           <div class="card">
-            <img src="{{-- {{ $user->avatar ?? 'https://picsum.photos/200' }} --}}"
+            <img src="{{ $comic->thumb }}"
               class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">{{ $comic["title"] }}</h5>
-              <p class="card-text">{{ $comic["price"] }}</p>
+              <h4 class="card-text">Price:{{ $comic["price"] }}</h4>
     
               <a href="{{ route('comics.show', $comic->id ) }}" class="card-link">
                 Dettagli</a>
